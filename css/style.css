@@ -17,6 +17,10 @@
     color: black;
 }
 
+.fa-white {
+    color: white;
+}
+
 .bold {
     font-weight: 600;
 }
@@ -144,8 +148,8 @@ header {
 }
 
 .search-bar-2 {
-    width: 335px;
     display: flex;
+    width: 335px;
     height: 49px;
     margin-bottom: 50px;
 }
@@ -163,10 +167,6 @@ header {
     border-bottom-right-radius: 15px;
     background-color: var(--main-color);
     border: 1px solid var(--main-color);
-}
-
-.fa-white {
-    color: white;
 }
 
 /****** Filter Bar ***********/
@@ -190,6 +190,7 @@ header {
 }
 
 /****** Hebergements And Populaires ***********/
+
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
