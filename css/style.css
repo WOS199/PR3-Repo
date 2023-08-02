@@ -21,6 +21,10 @@
     font-weight: 600;
 }
 
+.font-18 {
+    font-size: 18px;
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -121,6 +125,8 @@ header {
     width: 377px;
     height: 49px;
     margin-bottom: 50px;
+    border: 1px solid var(--main-bg-color);
+    border-radius: 15px;
 }
 
 .flex-center {
@@ -135,12 +141,12 @@ header {
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     border: 1px solid var(--main-bg-color);
+    flex-shrink: 0;
 }
 
 .search-field {
     width: 195px;
     background-color: #FFFFFF;
-    border: 1px solid var(--main-bg-color);
 }
 
 .search-button {
@@ -150,12 +156,15 @@ header {
     border-bottom-right-radius: 15px;
     background-color: var(--main-color);
     border: 1px solid var(--main-color);
+    flex-shrink: 0;
 }
 
 .search-button p {
     color: #FFFFFF;
 }
 
+
+/*
 .search-bar-2 {
     width: 335px;
     display: flex;
@@ -163,12 +172,14 @@ header {
     margin-bottom: 50px;
 }
 
+
 .search-field-2 {
     width: 235px;
     background-color: #FFFFFF;
     border: 1px solid var(--main-bg-color);
-}
+}*/
 
+/*
 .search-button-2 {
     width: 50px;
     background-color: burlywood;
@@ -176,7 +187,7 @@ header {
     border-bottom-right-radius: 15px;
     background-color: var(--main-color);
     border: 1px solid var(--main-color);
-}
+}*/
 
 .fa-white {
     color: white;
@@ -186,7 +197,8 @@ header {
 
 .filter-bar {
     display: flex;
-    column-gap: 15px;
+    flex-wrap: wrap;
+    column-gap: 10px;
     margin-bottom: 50px;
 }
 
@@ -200,6 +212,11 @@ header {
 
 .filter-item:hover {
     background-color: var(--filter-bg-color);
+}
+
+.filter-mobile-row {
+    display: flex;
+    column-gap: 10px;
 }
 
 /****** Hebergements And Populaires ***********/
@@ -331,13 +348,47 @@ header {
         border-top: unset;
     }
 
-    .search-bar {
+    .search-bar div:nth-of-type(3) p {
         display: none;
+    }
+
+    .search-bar {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .search-field {
+        width: 110%;
+    }
+
+    .search-button {
+        width: 50px;
+        border-radius: 15px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); 
+    }
+
+    .filter-bar p:first-of-type {
+        width: 100%;
+    }
+
+    .filter-mobile-row {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .filter-item {
+        width: 50%;
     }
 }
 
 @media (min-width: 767.99px) {
+    /*
     .search-bar-2 {
         display: none;
+    }*/
+
+    .search-bar div:nth-of-type(3) i {
+        display: none;
     }
+
 }
