@@ -120,9 +120,10 @@ header {
 
 .nav-item:hover {
     border-top: 2px solid var(--main-color);
+    color: var(--main-color)
 }
 
-.nav-bar a {
+a {
     text-decoration: none;
     color: #000000;
 }
@@ -330,6 +331,11 @@ header {
 
 /*********** ACTIVITY SECTION ***********/
 
+
+.activity-section {
+    padding: 0 40px;
+}
+
 .activity {
     display: flex;
     justify-content: space-between;
@@ -348,7 +354,7 @@ header {
 }
 
 .activity-item img {
-    height: 90%;
+    height: 88%;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
@@ -358,10 +364,30 @@ header {
 }
 
 .activity-item .flex-center {
-    height: 10%;
+    height: 12%;
     justify-content: flex-start;
 }
 
+
+/*********** FOOTER ***********/
+
+footer {
+    background-color: var(--main-bg-color);
+    display: flex;
+    padding: 30px;
+    column-gap: 10%;
+}
+
+footer div {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    line-height: 200%;
+}
+
+footer h3 {
+    margin: unset;
+}
 
 
 /*********** MEDIA QUERIES ***********/
@@ -453,8 +479,12 @@ header {
 
     /* Info Group */
 
-    .info-group, .activity-section {
+    .info-group {
         padding: 0 20px;
+    }
+
+    .activity-section {
+        padding: 0 40px;
     }
 
     .hebergements-and-populaires section {
@@ -474,6 +504,8 @@ header {
 
     .search-field {
         width: 110%;
+        justify-content: flex-start;
+        padding-left: 20px;
     }
 
     .search-button {
@@ -529,11 +561,27 @@ header {
 
     .activity {
         flex-direction: column;
+        margin-bottom: 20px;
     }
 
     .activity .card {
         width: 100%;
         margin: 10px 0;
+    }
+
+    /* Activity Section */
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer div {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    footer h3 {
+        margin-top: 20px;
     }
 }
 
