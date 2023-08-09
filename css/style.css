@@ -226,7 +226,7 @@ a {
 }
 
 
-/*********** HEBERGEMENTS + POPULAIRE ***********/
+/*********** HEBERGEMENTS + POPULAIRES ***********/
 
 .hebergements-and-populaires {
     display: flex;
@@ -332,7 +332,6 @@ a {
 
 /*********** ACTIVITY SECTION ***********/
 
-
 .activity-section {
     padding: 0 40px;
 }
@@ -429,7 +428,6 @@ footer h3 {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
-
 
     /* Activity Section */
 
